@@ -21,12 +21,30 @@ This work is accepted at the MICCAI PRIME workshop 2023.
 This code was implemented using Python 3.9.13
 
 ## Requirements
-
+torch = 2.0.1 + cu118 \
+numpy = 1.26.1 \
+networkx = 2.8.5 \
+scipy = 1.11.1 \
+torch_geometric = 2.3.0 \
+sklearn = 1.2.1 \
 
 ## Data Format
 In order to use our framework, you need to provide source_target_domains lists where each element in one list is a matrix of size (n * f), representing the local data of one hospital and the number of lists represents the number of hospitals. We denote n the total number of subjects in the dataset and f the number of features. Any element of the list can be considered as the source domain and the rest are the target domains. You need to include your data in the file main.py. So, just remove our simulated training and testing dataset and replace it with yours. Then FMDGNN will be trained with your simulated dataset and it will produce the plots of the predicted results of your selected hospital.
 
-## Related References
+## Components of Fed2M’s Code
+| Component | Content |
+| ------ | ------ |
+| config.py | Includes hyperparameter and other options. You may modify it according to your needs. |
+| cross_val.py | Includes the cross-validation |
+| data_process.py | Includes the data processing |
+| evaluate.py| Includes the way how we evaluate the model |
+| fed.py| Include the federated learning settings, including Client, Server and Hospital |
+| losses.py | Includes the losses used for training |
+| main.py| main function |
+| model.py/| Includes the GCN models|
+| plot.py | Includes the methods of how we plot the results after training |
+| train.py/ | Includes how we train the model  |
+| utils.py/ | Includes some utility functions  |
 
 ## Paper Link
 *https://link.springer.com/chapter/10.1007/978-3-031-46005-0_17*
@@ -34,6 +52,8 @@ In order to use our framework, you need to provide source_target_domains lists w
 ## Example Results
 ![Example Results](Fig3.png)
 
+## License
+Our code is released under MIT License (see LICENSE file for details).
 
 
 
