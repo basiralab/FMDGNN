@@ -49,6 +49,17 @@ In order to use our framework, you need to provide source_target_domains lists w
 ## Paper Link
 *https://link.springer.com/chapter/10.1007/978-3-031-46005-0_17*
 
+## Citation
+```latex
+@inproceedings{xu2023federated,
+  title={Federated Multi-domain GNN Network for Brain Multigraph Generation},
+  author={Xu, Chun and Rekik, Islem},
+  booktitle={International Workshop on PRedictive Intelligence In MEdicine},
+  pages={194--205},
+  year={2023},
+  organization={Springer}
+}
+```
 ## Example Results
 ![Example Results](Fig3.png)
 
