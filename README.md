@@ -31,7 +31,7 @@ sklearn = 1.2.1
 ## Data Format
 In order to use our framework, you need to provide source_target_domains lists where each element in one list is a matrix of size (n * f), representing the local data of one hospital and the number of lists represents the number of hospitals. We denote n the total number of subjects in the dataset and f the number of features. Any element of the list can be considered as the source domain and the rest are the target domains. You need to include your data in the file main.py. So, just remove our simulated training and testing dataset and replace it with yours. Then FMDGNN will be trained with your simulated dataset and it will produce the plots of the predicted results of your selected hospital.
 
-## Components of Fed2M’s Code
+## Components of FMDGNN Code
 | Component | Content |
 | ------ | ------ |
 | config.py | Includes hyperparameter and other options. You may modify it according to your needs. |
